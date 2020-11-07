@@ -13,7 +13,8 @@ function Header() {
         fontFamily: 'Arial, Helvetica, sans-serif',
         fontWeight: '600',
         fontSize: '1.2rem',
-        textDecoration: 'none'
+        textDecoration: 'none',
+        width: '100%'
     }
  
     return (
