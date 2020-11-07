@@ -1,5 +1,7 @@
 import React from 'react'
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom"
+import Navbar from 'react-bootstrap/Navbar'
+import Nav from 'react-bootstrap/Nav'
 
 // Components
 
@@ -15,22 +17,26 @@ function Header() {
     }
  
     return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark" style={font}>
-        <Link to="/" className={location.pathname === "/" ? "nav-link active navbar-brand" : "nav-link navbar-brand"} style={{fontSize: '2rem'}}>
-            Garrett Hudson
-        </Link>
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div className="navbar-nav">
-            <Link to="/about" className={location.pathname === "/about" ? "nav-link active" : "nav-link"}>About</Link>
-            <Link to="/resume" className={location.pathname === "/resume" ? "nav-link active" : "nav-link"}>Resume</Link>
-            <Link to="/portfolio" className={location.pathname === "/portfolio" ? "nav-link active" : "nav-link"}>Portfolio</Link>
-            <Link to="/contact" className={location.pathname === "/contact" ? "nav-link active" : "nav-link"}>Contact</Link>
-            </div>
+        <div className="container-fluid" style={font}>
+            <Navbar className="navbar-dark" bg="dark" expand="lg">
+                <Link to="/" className={location.pathname === "/" ? "nav-link active navbar-brand" : "nav-link navbar-brand"} style={{fontSize: '2rem'}}>
+                    Garrett Hudson
+                </Link>
+
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
+                <Navbar.Collapse id="basic-navbar-nav">
+
+                    <Nav className="ml-auto">
+                        <Link to="/about" className={location.pathname === "/about" ? "nav-link active" : "nav-link"}>About</Link>
+                        <Link to="/resume" className={location.pathname === "/resume" ? "nav-link active" : "nav-link"}>Resume</Link>
+                        <Link to="/portfolio" className={location.pathname === "/portfolio" ? "nav-link active" : "nav-link"}>Portfolio</Link>
+                        <Link to="/contact" className={location.pathname === "/contact" ? "nav-link active" : "nav-link"}>Contact</Link>
+                    </Nav>
+
+                </Navbar.Collapse>
+            </Navbar>
         </div>
-    </nav>
     )
 }
 
