@@ -18,7 +18,7 @@ function Header() {
     }
  
     return (
-        <div className="container-fluid" style={font}>
+        <div style={font}>
             <Navbar className="navbar-dark" bg="dark" expand="lg">
                 <Link to="/" className={location.pathname === "/" ? "nav-link active navbar-brand" : "nav-link navbar-brand"} style={{fontSize: '2rem'}}>
                     Garrett Hudson

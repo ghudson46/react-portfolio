@@ -19,8 +19,8 @@ function Project(props) {
                             {props.text}
                         </Card.Text>
                     <div style={{display:'flex', flexDirection:'row', justifyContent:'space-around'}}>
-                     <Button variant="primary"><a style={{textDecoration: 'none', color:'white'}}target='blank' href={props.deployLink}>Go to App</a></Button>
-                     <Button variant="secondary"><a style={{textDecoration: 'none', color:'white'}} target='blank' href={props.githubLink}>Go to repo</a></Button>
+                     <Button variant="dark"><a style={{textDecoration: 'none', color:'white'}}target='blank' href={props.deployLink}>Go to App</a></Button>
+                     <Button variant="dark"><a style={{textDecoration: 'none', color:'white'}} target='blank' href={props.githubLink}>Go to repo</a></Button>
                     </div>
                     </Card.Body>
                 </Card>
