@@ -16,7 +16,6 @@ export class Home extends Component {
                 <h1 style={{color: '#2b5876'}}>Hello,</h1><h1>I'm Garrett,</h1>
                 <h2>a full stack software developer</h2>
                 <span>
-                    <Button label="See my work!" url="/portfolio" />
                     <Button label="Let's work together!" url="/contact" />
                     <br/>
                 </span>
