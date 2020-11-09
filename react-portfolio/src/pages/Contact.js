@@ -3,6 +3,12 @@ import React from "react";
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
+
+library.add(faEnvelope, faPhone)
+
 class Contact extends React.Component {
   constructor(props) {
     super(props);
@@ -30,13 +36,16 @@ class Contact extends React.Component {
 
     this.setState({
       disabled: true,
-      emailSent: true
+      emailSent: true,
+      name: '',
+      email: '',
+      message: ''
     })
   }
 
   render() {
     return (
-      <div>
+      <div style={{marginBottom: '2rem', color: '#541388'}}>
         <h1 style={{textAlign: 'center', marginTop: '2rem'}}>Let's work!</h1>
 
         <Form style ={{display: 'flex', flexDirection: 'column', alignItems: 'center'}} onSubmit={this.handleSubmit}>
@@ -56,13 +65,18 @@ class Contact extends React.Component {
             <Form.Control style={{width: '25rem'}} id="message" name="message" as="textarea" rows="5" value={this.state.message} onChange={this.handleChange} />
           </Form.Group>
 
-          <Button className="d-inline-block" variant="dark" type="submit" disable={this.state.disabled}>
+          <Button className="d-inline-block button-gradient" variant="dark" type="submit" disable={this.state.disabled}>
             Send
           </Button>
 
           {this.state.emailSent === true && <p className="d-inline success-msg">Email sent</p>}
           {this.state.emailSent === false && <p className="d-inline err-msg">Email not sent</p>}
         </Form>
+
+        <span style={{display: 'flex', flexDirection: 'row', margin: '2rem ', justifyContent: 'center'}}>
+          <a href="mailto:garrett.hudson46@gmail.com" style={{textDecoration: 'none', color: '#4e4376'}}><FontAwesomeIcon icon={faEnvelope} style={{height: '30px', width: '30px', margin: '10px'}} /></a>
+          <a href="tel:919-606-6599" style={{textDecoration: 'none', color: '#4e4376'}}><FontAwesomeIcon icon={faPhone} style={{height: '30px', width: '30px', margin: '10px'}} /></a>
+        </span>
 
       </div>
       )

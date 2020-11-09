@@ -1,99 +1,84 @@
-# Unit 20 React Homework: React Portfolio
+# **React Portfolio**
 
-Now that you've worked with React and have multiple projects to share, you'll be updating your portfolio and other materials to build toward being employer competitive. Creating a portfolio using React will help set you apart from other developers whose portfolios do not use some of the latest technologies.
+## Description 
 
-If you are opting out of career services, this is *still a required assignment*. Part of being a web developer means being a part of a community. Having a place to share your projects is *necessary* if you're applying for jobs, but is still *critical* on your journey as a developer.
+My personal portfolio, created with react, showcasing my work thus far
 
-## Requirements
+# Technologies Used
 
-* Updated portfolio featuring 6 total projects
+React.js, javascript, html, css, node, bootstrap
 
-* Use React
+## Table of contents
 
-* A `Header` component that appears on multiple pages
+- [Installation](#installation)
+- [Features](#features)
+- [Example Gif](#example-gif)
+- [Repository Link](#Repository)
+- [Test](#Test)
+- [Licence](#Licence)
+- [GitHub Info](#GitHub)
 
-* A single `Project` component that will be used multiple times on a single page 
+## Installation
 
-* Navigation with React Router, dynamic rendering, or another third part router
-
-* A `Footer` component that appears on multiple pages
-
-* Update GitHub profile with pinned repositories featuring those same projects
-
-* Deploy this site to GitHub Pages using the [Create React App docs for deployment.](https://create-react-app.dev/docs/deployment/#github-pages)
-
-## Grading
-
-| Requirement    | Weight |
-| -------------- | ------ |
-| Portfolio      | 90%    |
-| GitHub Profile | 10%    |
+`npm install`
 
 
-## Instructions
+### `npm start`
 
-* [Updated Portfolio](#updated-portfolio)
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-* [Design](#design)
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-* [React](#react)
+### `npm test`
 
-* [Updated LinkedIn Profile](#updated-linkedin-profile)
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### Updated Portfolio
+### `npm build`
 
-Your updated site should still have all of the content it previously had:
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-* Your name
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-* Links to your GitHub profile & LinkedIn page as well as your email address and phone number
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-* A link to a PDF of your resume with updated projects
+### `npm eject`
 
-* A list of projects. For each project, make sure you have the following:
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-  * Project title
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-  * Link to the deployed version
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-  * Link to the GitHub repository
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-  * GIF or screenshot of the deployed application
+## Features
 
-
-#### Design
-
-As with the previous portfolio homework, "good" design is subjective. Your site should look
-"polished." Here are a few guidelines on what that means:
-
-* Mobile-first design
-
-* Choose a color palette for your site so it doesn't just look like
-the default bootstrap theme or an unstyled HTML site. You may we
-
-* Make sure the font size is large enough to read, and that the colors don't cause eye strain.
-
-* If you want to go above and beyond, try using animations and react component libraries. Note 
-that this will _not_ affect your grade, but it may impact how potentials employers gauge your knowledge.
-
-### React
-
-Additionally, this new portfolio should be created using React.
-
-At a minimum, your portfolio should include the following:
-
-* A `Header` component that appears on multiple pages
-
-* A single `Project` component that will be used multiple times on a single page 
-
-* Navigation with React Router, dynamic rendering, or another third part router
-
-* A `Footer` component that appears on multiple pages
+Portfolio web application using React.js
 
 
-### Updated LinkedIn Profile 
+## Repository
 
-Make sure to update your LinkedIn Profile with the new skills you've acquired since the last time it was updated.
+- [Project Repo](https://github.com/ghudson46/ghudson46)
 
-- - -
-© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+## Contributors
+
+this work had no other contributors
+
+## Test
+
+tested in browser
+
+## Licence
+
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
+
+## GitHub
+
+- Garrett Hudson
+- [GitHub Profile](https://github.com/ghudson46)
+- <garrett.hudson46@gmail.com>

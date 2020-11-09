@@ -6,11 +6,11 @@ import './Resume.css'
 function Resume() {
 
         return (
-            <div style={{textAlign: 'center', width: '80%', margin: '0 auto'}}>
+            <div style={{textAlign: 'center', width: '80%', margin: '0 auto', color: '#541388'}}>
                 <div className="skills__container bd-grid">          
                     <div>
                         <h2 className="skills__subtitle" style={{marginBottom: '2rem'}}>Profesional Skills</h2>
-                        <p className="skills__text" style={{marginBottom: '2rem', width: '30%', marginLeft:'35%', cursor: 'pointer', textDecoration: 'none'}}><a href="http://www.garretthudson.com/docs/Garrett%20Hudson%20Resume%20(dev).pdf" target="blank" style={{color: 'white', textDecoration: 'none'}}>Resume</a></p>
+                        <p className="skills__text button-gradient" style={{marginBottom: '2rem', width: '30%', marginLeft:'35%', cursor: 'pointer', textDecoration: 'none'}}><a href="http://www.garretthudson.com/docs/Garrett%20Hudson%20Resume%20(dev).pdf" target="blank" style={{color: 'white', textDecoration: 'none'}}>Resume</a></p>
                         <div className="skills__data">
                             <div className="skills__names">
                                 <i className='bx bxl-html5 skills__icon'></i>

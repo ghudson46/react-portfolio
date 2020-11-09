@@ -12,7 +12,7 @@ function Button(props) {
     return (
         <>
             <button 
-                className="btn" 
+                className="btn button-gradient" 
                 style={btnStyle}>
                 <a style={{textDecoration: 'none', color: 'white'}} href={props.url}>
                     {props.label}

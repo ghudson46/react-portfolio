@@ -8,13 +8,16 @@ import Nav from 'react-bootstrap/Nav'
 
 function Header() {
     const location = useLocation();
-
+    
     const font = {
         fontFamily: 'Arial, Helvetica, sans-serif',
         fontWeight: '600',
         fontSize: '1.2rem',
         textDecoration: 'none',
-        width: '100%'
+        width: '100%',
+        position: 'relative',
+        zIndex: '1000',
+        backgroundColor: 'linear-gradient(to right, red , yellow) !important'
     }
  
     return (
@@ -37,6 +40,7 @@ function Header() {
 
                 </Navbar.Collapse>
             </Navbar>
+            
         </div>
     )
 }

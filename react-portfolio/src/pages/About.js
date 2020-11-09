@@ -2,7 +2,7 @@ import React from "react";
 
 function About() {
   return (
-    <div style={{textAlign: 'center'}}>
+    <div style={{textAlign: 'center', marginTop: '-2rem', color: '#541388'}}>
 
       <div>
         <div>
@@ -11,8 +11,8 @@ function About() {
         </div>
                     
         <div>
-          <h2>Who am I?</h2>
-          <p style={{width: '60%', margin: '2rem auto'}}>I am a former NFL player and current full-stack developer. I'm Fully certified in a plethora of front end and back end technologies, specializing in Javascript. As an athlete, I was always looking for the best and most efficient way to get better, and I have carried that mentality into programming. I love using technology to create solutions to every day problems. My hobbies include golf, gaming, and watching and rating movies. (Check out my RateFlix movie application to see my scores on movies I've seen).  </p>           
+          <h2 >Who am I?</h2>
+          <p style={{width: '70%', margin: '0 auto 5rem auto'}}>I am a former NFL player and current full-stack developer. I'm Fully certified in a plethora of front end and back end technologies, specializing in Javascript. As an athlete, I was always looking for the best and most efficient way to get better, and I have carried that mentality into programming. I love using technology to create solutions to every day problems. My hobbies include golf, gaming, and watching and rating movies. (Check out my RateFlix movie application to see my scores on movies I've seen).  </p>           
         </div>  
         </div>                                 
     </div>

@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #4e4376;
 }
 
 code {
@@ -22,3 +23,29 @@ code {
   padding: 10px 15px;
 }
 
+.navbar,
+.navbar-default {
+    background-image: linear-gradient(to right, #2b5876 , #4e4376 ) !important; /* override background image gradient w/ flat color */
+}
+
+.footer,
+.footer-default {
+    background-image: linear-gradient(to right, #2b5876 , #4e4376 ) !important; /* override background image gradient w/ flat color */
+}
+
+.button-gradient {
+    background-image: linear-gradient(to right, #2b5876 , #4e4376 ) !important;
+    border: none;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+a:hover {
+  transform: scale(1.01);
+}
+
+.skills__data:hover{
+  transform: scale(1.01);
+}
